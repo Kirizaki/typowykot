@@ -15,20 +15,20 @@
     <style>
         @font-face {
             font-family: MatriceSemibold;
-            src: url('/fonts/MatriceSemibold.otf');
+            src: url('fonts/MatriceSemibold.otf');
         }
         
         * {
             font-family: MatriceSemibold;
-            cursor: url("/img/cursor_32_regular.png"), url("/img/cursor_32_regular.png"), default;
+            cursor: url("img/cursor_32_regular.png"), url("img/cursor_32_regular.png"), default;
         }
         
         a {
-            cursor: url("/img/cursor_32_hover.png"), url("/img/cursor_32_hover.png"), pointer;
+            cursor: url("img/cursor_32_hover.png"), url("img/cursor_32_hover.png"), pointer;
         }
         
         img {
-            cursor: url("/img/cursor_32_hover.png"), url("/img/cursor_32_hover.png"), pointer;
+            cursor: url("img/cursor_32_hover.png"), url("img/cursor_32_hover.png"), pointer;
         }
         
         td {
@@ -123,7 +123,7 @@
             <tr>
                 <div class="container" style="text-align:center;width:100%;margin-top:5%">
                     <div>
-                        <img id="toggler" src="/img/more.png" style="position: relative;" onclick='toggleWorks()'></img>
+                        <img id="toggler" src="img/more.png" style="position: relative;" onclick='toggleWorks()'></img>
                     </div>
                 </div>
             </tr>
@@ -198,7 +198,7 @@
     <section style="padding-top: 52px;padding-bottom: 26px;padding-left: 52px;padding-right: 52px;">
         <table style="width: 100%">
             <tr>
-                <td style="text-align: left;font-size: 18px;">DESIGNED IN FIGMA, BUILT BY <img src="/img/cat.png" style="width: 40px;vertical-align: middle;"></img>
+                <td style="text-align: left;font-size: 18px;">DESIGNED IN FIGMA, BUILT BY <img src="img/cat.png" style="width: 40px;vertical-align: middle;"></img>
                 </td>
                 <td style="text-align: right;font-size: 18px;">TYPOWY KOT 2021. ALL RIGHTS RESERVED</td>
             </tr>
@@ -214,7 +214,7 @@
         function switchLogo() {
             var logo = document.getElementById("logo");
             var logoId = getRandomInt(0, 11);
-            logo.src = "/img/logo" + logoId.toString() + ".png";
+            logo.src = "img/logo" + logoId.toString() + ".png";
         }
 
         switchLogo()

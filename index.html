@@ -240,10 +240,14 @@
             if (arrowElement.style.display === "none") {
                 arrowElement.style.display = "-webkit-inline-box";
                 elem.style.display = "none";
-                audio.play();
+                audio.play().catch(error => {
+                    console.log('maybe click somewhere? ;)')
+                });
                 audio.onended = function() {
                     if (arrowElement.style.display === "-webkit-inline-box") {
-                        audio.play();
+                        audio.play().catch(error => {
+                            console.log('maybe click somewhere? ;)')
+                        });
                     } else {
                         if (audio.currentTime > 0) {
                             audio.pause();
@@ -275,7 +279,9 @@
             if (audio.currentTime > 0) {
                 audio.currentTime = 0;
             }
-            audio.play();
+            audio.play().catch(error => {
+                console.log('maybe click somewhere? ;)')
+            });
         }
 
         function toggleSticker(elem, src) {

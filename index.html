@@ -57,16 +57,22 @@
 </head>
 
 <body>
-    <img onmouseover='toggleSticker(this, "img/sticker1_hover.png")' onmouseout='toggleSticker(this, "img/sticker1_regular.png")' class="rotate" src="img/sticker1_regular.png" style="position:absolute;width: 200px;height: auto;top: 550px;left: 1500px;z-index:3">
+    <audio id="meow">
+        <source src="audio/meow.ogg" type="audio/ogg">
+    </audio>
+    <audio id="dawg">
+        <source src="audio/dawg.ogg" type="audio/ogg">
+    </audio>
+    <audio id="nacht">
+        <source src="audio/nacht.ogg" type="audio/ogg">
+    </audio>
+    <img onmouseover='enabledDawg(this, "img/sticker1_hover.png")' onmouseout='disableDawg(this, "img/sticker1_regular.png")' class="rotate" src="img/sticker1_regular.png" style="position:absolute;width: 200px;height: auto;top: 550px;left: 1500px;z-index:3">
     <img onmouseover='toggleSticker(this, "img/sticker2_regular.png")' onmouseout='toggleSticker(this, "img/sticker2_hover.png")' class="rotate" src="img/sticker2_hover.png" style="position:absolute;width: 200px;height: auto;top: 1140px;left: 850px;z-index:3">
     <header id="HEAD" style="padding-top: 52px;padding-bottom: 52px;padding-left: 52px;padding-right: 52px;">
         <div class="logo_wrapper" style="width: 50%;">
             <div class="logo">
                 <a href="#HEAD">
                     <img id="logo" onclick="switchLogo()" class="w1 vibrate-1" style="height: 70px;width: 70px;">
-                    <audio id="meow">
-                        <source src="audio/meow.ogg" type="audio/ogg">
-                    </audio>
                 </a>
             </div>
         </div>
@@ -171,9 +177,6 @@
                         <div>
                             <a id="toggler_tt">TIKTOK</a>
                             <img id="tt_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
-                            <audio id="nacht">
-                                <source src="audio/nacht.ogg" type="audio/ogg">
-                              </audio>
                         </div>
                     </div>
                 </td>
@@ -184,9 +187,6 @@
                             <div>
                                 <a id="toggler_db">DRIBBBLE</a>
                                 <img id="db_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
-                                <audio id="nacht">
-                                    <source src="audio/nacht.ogg" type="audio/ogg">
-                                </audio>
                             </div>
                         </div>
                     </td>
@@ -199,9 +199,6 @@
                         <div>
                             <a id="toggler_bh">BEHANCE</a>
                             <img id="bh_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
-                            <audio id="nacht">
-                                <source src="audio/nacht.ogg" type="audio/ogg">
-                            </audio>
                         </div>
                     </div>
                 </td>
@@ -212,9 +209,6 @@
                         <div>
                             <a id="toggler_li">LINKEDIN</a>
                             <img id="li_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
-                            <audio id="nacht">
-                                <source src="audio/nacht.ogg" type="audio/ogg">
-                            </audio>
                         </div>
                     </div>
                 </td>
@@ -280,6 +274,21 @@
 
         function toggleSticker(elem, src) {
             elem.src = src;
+        }
+
+        function enabledDawg(elem, src) {
+            elem.src = src;
+            var audio = document.getElementById('dawg');
+            audio.play().catch(error => {
+                console.log('maybe click somewhere? ;)')
+            });
+        }
+
+        function disableDawg(elem, src) {
+            elem.src = src;
+            var audio = document.getElementById('dawg');
+            audio.pause();
+            audio.currentTime = 0.0;
         }
 
         switchLogo()

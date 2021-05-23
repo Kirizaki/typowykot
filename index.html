@@ -64,6 +64,9 @@
             <div class="logo">
                 <a href="#HEAD">
                     <img id="logo" onclick="switchLogo()" class="w1 vibrate-1" style="height: 70px;width: 70px;">
+                    <audio id="meow">
+                        <source src="audio/meow.ogg" type="audio/ogg">
+                    </audio>
                 </a>
             </div>
         </div>
@@ -268,6 +271,11 @@
             var logo = document.getElementById("logo");
             var logoId = getRandomInt(0, 11);
             logo.src = "img/logo" + logoId.toString() + ".png";
+            var audio = document.getElementById("meow");
+            if (audio.currentTime > 0) {
+                audio.currentTime = 0;
+            }
+            audio.play();
         }
 
         function toggleSticker(elem, src) {

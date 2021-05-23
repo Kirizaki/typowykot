@@ -70,13 +70,13 @@
         <table>
             <tr>
                 <div class="container">
-                    <img onclick='alert("nyanthing here..")' id="type0" src="img/type0.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
+                    <img onclick='alert("nyanthing here..")' src="img/w1.png" alt="36daysoftype" class="image" style="height: auto; width: 900px;">
                     <div class="middle">
                         <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
                     </div>
                 </div>
                 <div class="container">
-                    <img onclick='alert("nyanthing here..")' src="img/type1.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
+                    <img onclick='alert("nyanthing here..")' src="img/w0.png" alt="36daysoftype" class="image" style="height: auto; width: 900px;">
                     <div class="middle">
                         <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
                     </div>
@@ -84,13 +84,13 @@
             </tr>
             <tr>
                 <div class="container">
-                    <img onclick='alert("nyanthing here..")' src="img/type1.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
+                    <img onclick='alert("nyanthing here..")' src="img/w2.png" alt="36daysoftype" class="image" style="height: auto; width: 900px;">
                     <div class="middle">
                         <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
                     </div>
                 </div>
                 <div class="container">
-                    <img onclick='alert("nyanthing here..")' src="img/type0.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
+                    <img onclick='alert("nyanthing here..")' src="img/w3.png" alt="36daysoftype" class="image" style="height: auto; width: 900px;">
                     <div class="middle">
                         <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
                     </div>
@@ -98,27 +98,13 @@
             </tr>
             <tr>
                 <div class="container" id="hiddenWorks0" style="display: none;">
-                    <img onclick='alert("nyanthing here..")' src="img/type0.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
+                    <img onclick='alert("nyanthing here..")' src="img/w0.png" alt="36daysoftype" class="image" style="height: auto; width: 900px;">
                     <div class="middle">
                         <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
                     </div>
                 </div>
                 <div onclick='alert("nyanthing here..")' class="container" id="hiddenWorks1" style="display: none;">
-                    <img src="img/type1.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
-                    <div class="middle">
-                        <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
-                    </div>
-                </div>
-            </tr>
-            <tr>
-                <div class="container" id="hiddenWorks2" style="display: none;">
-                    <img onclick='alert("nyanthing here..")' src="img/type1.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
-                    <div class="middle">
-                        <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
-                    </div>
-                </div>
-                <div class="container" id="hiddenWorks3" style="display: none;">
-                    <img onclick='alert("nyanthing here..")' src="img/type0.png" alt="36daysoftype" class="image" style="height: 100%; width: 100%;">
+                    <img onclick='alert("nyanthing here..")' src="img/w4.png" alt="36daysoftype" class="image" style="height: auto; width: 900px;">
                     <div class="middle">
                         <div class="text">36 DAYS OF TYPE:<br><br>Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. Text placeholder. </div>
                     </div>
@@ -127,7 +113,7 @@
             <tr>
                 <div class="container" style="text-align:center;width:100%;margin-top:5%">
                     <div>
-                        <img id="toggler" src="img/more.png" style="position: relative;" onclick='toggleWorks()'></img>
+                        <img id="toggler" src="img/more.png" style="position: relative;width: 350px;height: auto;" onclick='toggleWorks()'></img>
                     </div>
                 </div>
             </tr>
@@ -284,24 +270,12 @@
             var x = document.getElementById("hiddenWorks0");
             if (x.style.display === "none") {
                 x.style.display = "block";
-                document.getElementById("toggler").text = "GIVE ME LESS.."
+                document.getElementById("toggler").src = "img/less.png"
             } else {
-                document.getElementById("toggler").text = "GIVE ME MORE.."
+                document.getElementById("toggler").src = "img/more.png"
                 x.style.display = "none";
             }
             var x = document.getElementById("hiddenWorks1");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-            var x = document.getElementById("hiddenWorks2");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-            var x = document.getElementById("hiddenWorks3");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {

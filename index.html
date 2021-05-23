@@ -31,6 +31,10 @@
             cursor: url("img/cursor_32_hover.png"), url("img/cursor_32_hover.png"), pointer;
         }
         
+        div {
+            cursor: url("img/cursor_32_hover.png"), url("img/cursor_32_hover.png"), pointer;
+        }
+        
         td {
             font-size: 36px;
             padding-top: 25px;
@@ -133,64 +137,84 @@
         <p style="font-size: 72px;padding-top: 52px;padding-bottom: 52px;">WANT TO DO A DESIGN<br>OR DUO TOGETHER?</p>
         <table style="width: 100%">
             <tr>
-                <td style="width: 10%;text-align: right;">→</td>
+                <td style="width: 10%;text-align: right;">
+                </td>
                 <td style="width: 300px;text-align: center;">
-                    <div class="container" style="text-align:center;width:100%;margin-top:5%">
+                    <div onclick='showSocialMedia("https://www.instagram.com/typowy_kot")' onmouseover='toggleArrow("ig_arrow", "nacht","toggler_ig")' onmouseout='toggleArrow("ig_arrow", "nacht", "toggler_ig")' class="container" style="text-align:center;width:100%;margin-top:5%;">
                         <div>
-                            <a id="toggler" onclick='showSocialMedia("https://www.instagram.com/typowy_kot")'>INSTAGRAM</a>
+                            <a id="toggler_ig">INSTAGRAM</a>
+                            <img id="ig_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;position:-webkit-sticky">
                         </div>
                     </div>
                 </td>
-                <td style="width: auto;">←</td>
-                <td style="width: 10%;text-align: right;">→</td>
+                <td style="width: auto;">
+                </td>
+                <td style="width: 10%;text-align: right;"></td>
                 <td style="width: 300px;text-align: center;">
-                    <div class="container" style="text-align:center;width:100%;margin-top:5%">
+                    <div onclick='showSocialMedia("mailto:aga.typowykot@gmail.com")' onmouseover='toggleArrow("m_arrow", "nacht","toggler_m")' onmouseout='toggleArrow("m_arrow", "nacht", "toggler_m")' class="container" style="text-align:center;width:100%;margin-top:5%;">
                         <div>
-                            <a id="toggler" onclick='showSocialMedia("mailto:aga.typowykot@gmail.com")'>E-MAIL</a>
+                            <a id="toggler_m">E-MAIL</a>
+                            <img id="m_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;position:-webkit-sticky">
                         </div>
                     </div>
                 </td>
-                <td style="width: auto;">←</td>
+                <td style="width: auto;"></td>
             </tr>
             <tr>
-                <td style="width: 10%;text-align: right;">→</td>
+                <td style="width: 10%;text-align: right;"></td>
                 <td style="width: 300px;text-align: center;">
-                    <div class="container" style="text-align:center;width:100%;margin-top:5%">
+                    <div onclick='showSocialMedia("https://www.tiktok.com/@typische_katze")' onmouseover='toggleArrow("tt_arrow", "nacht","toggler_tt")' onmouseout='toggleArrow("tt_arrow", "nacht", "toggler_tt")' class="container" style="text-align:center;width:100%;margin-top:5%">
                         <div>
-                            <a id="toggler" onclick='showSocialMedia("https://www.tiktok.com/@typische_katze")'>TIKTOK</a>
+                            <a id="toggler_tt">TIKTOK</a>
+                            <img id="tt_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
+                            <audio id="nacht">
+                                <source src="audio/nacht.ogg" type="audio/ogg">
+                              </audio>
                         </div>
                     </div>
                 </td>
-                <td style="width: auto;">←</td>
-                <td style="width: 10%;text-align: right;">→</td>
-                <td style="width: 300px;text-align: center;">
-                    <div class="container" style="text-align:center;width:100%;margin-top:5%">
-                        <div>
-                            <a id="toggler" onclick='showSocialMedia("https://dribbble.com/AgaKotowska")'>DRIBBBLE</a>
+                <td style="width: auto;">
+                    <td style="width: 10%;text-align: right;"></td>
+                    <td style="width: 300px;text-align: center;">
+                        <div onclick='showSocialMedia("https://dribbble.com/AgaKotowska")' onmouseover='toggleArrow("db_arrow", "nacht","toggler_db")' onmouseout='toggleArrow("db_arrow", "nacht", "toggler_db")' class="container" style="text-align:center;width:100%;margin-top:5%">
+                            <div>
+                                <a id="toggler_db">DRIBBBLE</a>
+                                <img id="db_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
+                                <audio id="nacht">
+                                    <source src="audio/nacht.ogg" type="audio/ogg">
+                                </audio>
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td style="width: auto;">←</td>
+                    </td>
+                    <td style="width: auto;"></td>
             </tr>
             <tr>
-                <td style="width: 10%;text-align: right;">→</td>
+                <td style="width: 10%;text-align: right;"></td>
                 <td style="width: 300px;text-align: center;">
-                    <div class="container" style="text-align:center;width:100%;margin-top:5%">
+                    <div onclick='showSocialMedia("https://www.behance.net/AgnieszkaKotowska")' onmouseover='toggleArrow("bh_arrow", "nacht","toggler_bh")' onmouseout='toggleArrow("bh_arrow", "nacht", "toggler_bh")' class="container" style="text-align:center;width:100%;margin-top:5%">
                         <div>
-                            <a id="toggler" onclick='showSocialMedia("https://www.behance.net/AgnieszkaKotowska")'>BEHANCE</a>
+                            <a id="toggler_bh">BEHANCE</a>
+                            <img id="bh_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
+                            <audio id="nacht">
+                                <source src="audio/nacht.ogg" type="audio/ogg">
+                            </audio>
                         </div>
                     </div>
                 </td>
-                <td style="width: auto;">←</td>
-                <td style="width: 10%;text-align: right;">→</td>
+                <td style="width: auto;"></td>
+                <td style="width: 10%;text-align: right;"></td>
                 <td style="width: 300px;text-align: center;">
-                    <div class="container" style="text-align:center;width:100%;margin-top:5%">
+                    <div onclick='showSocialMedia("https://www.linkedin.com/in/agnieszka-kotowska-584258b4/")' onmouseover='toggleArrow("li_arrow", "nacht","toggler_li")' onmouseout='toggleArrow("li_arrow", "nacht", "toggler_li")' class="container" style="text-align:center;width:100%;margin-top:5%">
                         <div>
-                            <a id="toggler" onclick='showSocialMedia("https://www.linkedin.com/in/agnieszka-kotowska-584258b4/")'>LINKEDIN</a>
+                            <a id="toggler_li">LINKEDIN</a>
+                            <img id="li_arrow" src="img/arrow.png" class="vibrate-1" style="height: auto;width: 50px;display: none;">
+                            <audio id="nacht">
+                                <source src="audio/nacht.ogg" type="audio/ogg">
+                            </audio>
                         </div>
                     </div>
                 </td>
-                <td style="width: auto;">←</td>
+                <td style="width: auto;"></td>
             </tr>
             <tr></tr>
         </table>
@@ -205,6 +229,34 @@
         </table>
     </section>
     <script>
+        function toggleArrow(arrow_id_str, audio_id, elem_id) {
+            var arrowElement = document.getElementById(arrow_id_str);
+            var elem = document.getElementById(elem_id);
+            var audio = document.getElementById(audio_id);
+            if (arrowElement.style.display === "none") {
+                arrowElement.style.display = "-webkit-inline-box";
+                elem.style.display = "none";
+                audio.play();
+                audio.onended = function() {
+                    if (arrowElement.style.display === "-webkit-inline-box") {
+                        audio.play();
+                    } else {
+                        if (audio.currentTime > 0) {
+                            audio.pause();
+                            audio.currentTime = 0.0;
+                        }
+                    }
+                };
+            } else {
+                arrowElement.style.display = "none";
+                elem.style.display = "-webkit-inline-box";
+                if (audio.currentTime > 0) {
+                    audio.pause();
+                    audio.currentTime = 0.0;
+                }
+            }
+        }
+
         function getRandomInt(min, max) {
             min = Math.ceil(min);
             max = Math.floor(max);
